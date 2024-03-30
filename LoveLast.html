@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ask Her Out</title>
+
+    <link rel="stylesheet" href="Lovelast.css" />
+    <style>
+      body {
+          position: relative;
+          width: 100vw;
+          height: 100vh;
+          overflow: hidden;
+          transition: background-image 1s ease-in-out; /* Smooth transition between images */
+      }
+
+      .background-image {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 20vw; /* Display images at 20% of the viewport width */
+          height: 40vh; /* Display images at 20% of the viewport height */
+          background-size:100%;
+          background-repeat: no-repeat;
+          background-position: center;
+      }
+  </style>
+  </head>
+  <body>
+    <div class="pink">
+      
+      <div class="container">
+        <div
+          class="tenor-gif-embed"
+          data-postid="253027946666209433"
+          data-share-method="host"
+          data-aspect-ratio="1.37853"
+          data-width="100%"
+        >
+        
+          <a
+            href="https://tenor.com/view/mochi-cat-mochi-and-goma-goma-and-peach-mochi-mochi-peach-cat-gif-gif-253027946666209433"
+            >Mochi Cat GIF</a
+          
+
+          >from <a href="https://tenor.com/search/mochi-gifs">Mochi GIFs</a>
+          <h3> as a fri</h3>
+
+        </div>
+        <div>
+          <p style="font-style: italic;">play this song for me and keep smiling😘</p>
+          <div  style="margin: auto ; color: red;">
+            
+            <audio controls autoplay  >
+              <source src="nakh.mp3.mp3" type="audio/mp3">
+              </audio>
+          </div>
+        </div>
+       
+        <script
+          type="text/javascript"
+          async
+          src="https://tenor.com/embed.js"
+        >
+        
+        
+    </script>
+    <script>
+      
+       const IMAGE_URLS = [
+        'ved1.jpg',
+           
+            'ved6.jpg',
+            'ved7.jpg',
+            
+            'ved13.jpg',
+            'ved14.jpg',
+            'ved21.jpg',
+            'ved8.jpg',
+            'ved18.jpg',
+            'ved9.jpg',
+            'ved2.jpg',
+            'ved4.jpg',
+            'ved12.jpg',
+            'ved17.jpg',
+            'ved15.jpg',
+            'ved16.jpg',
+            'ved10.jpg',
+            'ved11.jpg',
+           ,
+            'ved19.jpg',
+            'ved20.jpg',
+            
+            'ved5.jpg',
+          
+            // Add more image URLs as needed
+        ];
+        
+            
+            
+
+        function getRandomPosition() {
+            const x = Math.random() * (window.innerWidth - 20); // Subtract image width to keep it within the viewport
+            const y = Math.random() * (window.innerHeight - 20); // Subtract image height to keep it within the viewport
+            return { x, y };
+        }
+
+        function getRandomImage() {
+            const randomIndex = Math.floor(Math.random() * IMAGE_URLS.length);
+            return IMAGE_URLS[randomIndex];
+        }
+
+        function createBackgroundImage() {
+            const imageUrl = getRandomImage();
+            const { x, y } = getRandomPosition();
+
+            const div = document.createElement('div');
+            div.classList.add('background-image');
+            div.style.backgroundImage = `url(${imageUrl})`;
+            div.style.left = `${x}px`;
+            div.style.top = `${y}px`;
+
+            document.body.appendChild(div);
+        }
+
+        function setRandomBackgroundImages() {
+            // Clear previous background images
+            document.querySelectorAll('.background-image').forEach(image => image.remove());
+
+            // Create new random background images
+            for (let i = 0; i <6; i++) { // Change 5 to the number of images you want to display
+                createBackgroundImage();
+            }
+        }
+
+        // // Set initial background images
+        // setRandomBackgroundImages();
+
+        // // Change background images every one second
+        // setInterval(setRandomBackgroundImages, 1000);
+     
+
+        setTimeout(() => {
+        setRandomBackgroundImages();
+        // Change background images every one second
+        setInterval(setRandomBackgroundImages, 1000);
+    }, 8000); // Delay in milliseconds
+
+    </script>
+     <!-- const IMAGE_URLS = [
+     'ved1.jpg',
+         'ved2.jpg',
+         'ved4.jpg',
+         'ved5.jpg',
+         'ved6.jpg',
+         'ved7.jpg',
+         'ved8.jpg',
+         'ved9.jpg',
+         // Add more image URLs as needed
+     ];
+
+     function getRandomPosition() {
+         const x = Math.random() * (window.innerWidth - 20); // Subtract image width to keep it within the viewport
+         const y = Math.random() * (window.innerHeight - 20); // Subtract image height to keep it within the viewport
+         return { x, y };
+     }
+
+     function getRandomImage() {
+         const randomIndex = Math.floor(Math.random() * IMAGE_URLS.length);
+         return IMAGE_URLS[randomIndex];
+     }
+
+     function createBackgroundImage() {
+         const imageUrl = getRandomImage();
+         const { x, y } = getRandomPosition();
+
+         const div = document.createElement('div');
+         div.classList.add('background-image');
+         div.style.backgroundImage = `url(${imageUrl})`;
+         div.style.left = `${x}px`;
+         div.style.top = `${y}px`;
+
+         document.body.appendChild(div);
+     }
+
+     function setRandomBackgroundImages() {
+         // Clear previous background images
+         document.querySelectorAll('.background-image').forEach(image => image.remove());
+
+         // Create new random background images
+         for (let i = 0; i < 5; i++) { // Change 5 to the number of images you want to display
+             createBackgroundImage();
+         }
+     }
+
+     // Set initial background images
+     setRandomBackgroundImages();
+
+     // Change background images every one second
+     setInterval(setRandomBackgroundImages, 1000);
+         -->
+          <!-- The video -->
+          <h1 > HOW SWEET😘</h1>
+  <video autoplay muted loop id="myVideo">
+    <source src="ved.mp4" type="video/mp4">
+    <h1 > HOW SWEET😘</h1>
+  </video>
+  
+  <!-- Optional: some overlay text to describe the video -->
+  <div class="content">
+    <h1 style="font-size: 2rem; font-weight: 300; color:darkred; opacity: 800; font-style: oblique " > HOW SWEET  😘</h1>
+    
+      
+    </div>
+    
+    <!-- Use a button to pause/play the video with JavaScript -->
+    <!-- <button id="myBtn" onclick="myFunction()" style="color: black; font-weight: 400;">NO MEANS NOOOOOOOOOOOOOOOOOOOOOOOOOOO</button> -->
+    <!-- <h2 style="font-weight: 500; opacity: 600;">
+      NO MEANS NOOOOOOOOOOOOOOOOOOOOOOOOOOO
+    </h2> -->
+  
+    
+    
+  </body>
+</html>
